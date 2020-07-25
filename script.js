@@ -17,3 +17,29 @@ var specialChar = [
 var numbers = [
   "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
 ];
+
+// A function which asks various questions about preferred password criteria 
+function getPasswordCriteria() {
+  var passLength = null;
+  
+  // Do statement to ask for the password character limit and While statement to enforce a length greater than 8 and less than 128 chars
+  do {
+    passLength = parseInt(prompt("How many characters do you want to use in your password?"));
+  }
+  while (isNaN(passLength) || !(passLength >= 8 && passLength <= 128));
+  console.log("Pass Length:", passLength);
+
+  var usingLowercase = confirm("Would you like to use lowercase characters?");
+  var usingUppercase = confirm("Would you like to use uppercase characters?");
+  var usingNumbers = confirm("Would you like to use numbers?");
+  var usingSpecialChar = confirm("Would you like to use special characters?");
+
+  var passwordCriteria = {
+    passLength: passLength,
+    usingLowercase: usingLowercase,
+    usingUppercase: usingUppercase,
+    usingNumbers: usingNumbers,
+    usingSpecialChar: usingSpecialChar
+  };
+return passwordCriteria;
+} 
