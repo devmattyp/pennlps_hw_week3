@@ -4,10 +4,10 @@
 * [General Info](#general-info)
 
 ## Project Description
-This project is simple password generator.  Click the 'Generate Password' button
-and you will be prompted with several questions on the criteria of the password.  
-Once all questions are answered, a password will be printed in the box labled
-'Your Secure Password.'
+This project is simple password generator.  Click the 'Generate Password'  
+button and you will be prompted with several questions on the criteria of  
+the password. Once all questions are answered, a password will be printed  
+in the box labeled 'Your Secure Password.'
 	
 ## Technologies
 Project is created with:
@@ -16,6 +16,6 @@ Project is created with:
 * JavaScript
 	
 ## General Info
-Creator: Matthew Parsons
-Program: Penn LPS Bootcamp
-Assignment: Week-3
+Creator: Matthew Parsons   
+Program: Penn LPS Bootcamp  
+Assignment: Week-3  
