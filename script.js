@@ -43,3 +43,10 @@ function getPasswordCriteria() {
   };
 return passwordCriteria;
 } 
+
+  // this function takes an array of characters and returns a random character
+  function randomChar(characters) {
+    var charIndex = Math.floor(Math.random() * characters.length);
+    return characters[charIndex];
+  }
+  
