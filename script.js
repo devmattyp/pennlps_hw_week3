@@ -49,4 +49,30 @@ return passwordCriteria;
     var charIndex = Math.floor(Math.random() * characters.length);
     return characters[charIndex];
   }
-  
+
+ // this function creates random string based on password criteria
+ function generatePassword() {
+  var criteria = getPasswordCriteria();
+  debugger
+  var allowableChar = [];
+  var result = "";
+
+  if (criteria.usingLowercase) {
+    allowableChar = allowableChar.concat(lowercaseChar);
+  }
+  if (criteria.usingNumbers) {
+    allowableChar = allowableChar.concat(numbers);
+  }
+  if (criteria.usingUppercase) {
+    allowableChar = allowableChar.concat(uppercaseChar);
+  }
+  if (criteria.usingSpecialChar) {
+    allowableChar = allowableChar.concat(specialChar);
+  }
+debugger;
+  for (var i = 0; i < criteria.passLength; i++) {
+    result += randomChar(allowableChar);
+  }
+console.log(result);
+  return result;
+}
